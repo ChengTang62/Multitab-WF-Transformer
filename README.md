@@ -1,7 +1,7 @@
 # Multi-tab Website Fingerprinting Attack Library
 
 <p align="center">
-<img src=".\figs\ARES.png" height = "200" alt="" align=center />
+<img src=".\figs\ARES.png" height = "180" alt="" align=center />
 <br><br>
 </p>
 
