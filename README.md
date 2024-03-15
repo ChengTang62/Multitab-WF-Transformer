@@ -1,6 +1,11 @@
 # Multi-tab Website Fingerprinting Attack Library
 
-![ARES](figs/ARES.pdf)
+
+<p align="center">
+<img src=".\figs\ARES.pdf" height = "250" alt="" align=center />
+<br><br>
+<b>Figure 1.</b> Overall architecture of ARES.
+</p>
 
 This repository contains the source code and datasets for our paper "Robust Multi-tab Website Fingerprinting Attacks in the Wild" (Published in IEEE S&P 2023). Furthermore, we release the code for other multi-tab website fingerprinting attacks.
 
@@ -72,7 +77,11 @@ Specifically, you can use [TensorBoard](https://pytorch.org/docs/stable/tensorbo
 tensorboard --logdir=runs
 ```
 
-![tensorboard](figs/tensorboard.pdf)
+<p align="center">
+<img src=".\figs/tensorboard.pdf" height = "250" alt="" align=center />
+<br><br>
+<b>Figure 2.</b> Example of tensorboard.
+</p>
 
 Note that, benefiting from the Transformer architecture, ARES's performance gradually improves with an increase in epochs, even experiencing slight improvements beyond 500 epochs.
 
