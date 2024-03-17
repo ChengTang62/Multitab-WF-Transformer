@@ -1,4 +1,4 @@
-# Multi-tab Website Fingerprinting Attack Library
+# Robust Multi-tab Website Fingerprinting Attacks in the Wild
 
 <p align="center">
 <img src=".\figs\ARES.png" height = "180" alt="" align=center />
@@ -6,7 +6,7 @@
 </p>
 
 
-This repository contains the source code and datasets for our paper "Robust Multi-tab Website Fingerprinting Attacks in the Wild" (Published in IEEE S&P 2023). Furthermore, we release the code for other multi-tab website fingerprinting attacks.
+This repository contains the source code and datasets for our paper "Robust Multi-tab Website Fingerprinting Attacks in the Wild" (Published in IEEE S&P 2023).
 
 
 If you want to cite the library, you can use our [paper](https://www.computer.org/csdl/proceedings-article/sp/2023/933600b005/1NrbYpaG652).
@@ -93,10 +93,6 @@ python eval.py -d closed_2tab -g 0 -m ARES
 ```
 
 > You can directly download the trained ARES parameter file (with the random seed set to 1018) [link](https://drive.google.com/drive/folders/1wKMlky_G-x_1IxJg6YgnKt3GFFyTOPrK?usp=sharing).
-
-## Baselines
-
-Will be updated soon
 
 
 ## Contact
