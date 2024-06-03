@@ -99,5 +99,5 @@ python eval.py -d closed_2tab -g 0 -m ARES
 
 If you have any questions or suggestions, feel free to contact:
 
-- Xinhao Deng (dengxh23@mails.tsinghua.edu.cn)
+- [Xinhao Deng](https://xinhao-deng.github.io/) (dengxh23@mails.tsinghua.edu.cn)
 
