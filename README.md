@@ -9,7 +9,7 @@
 This repository contains the source code and datasets for our paper "Robust Multi-tab Website Fingerprinting Attacks in the Wild" (Published in IEEE S&P 2023).
 
 
-If you want to cite the library, you can use our [paper](https://www.computer.org/csdl/proceedings-article/sp/2023/933600b005/1NrbYpaG652).
+If you want to cite the repo, you can use our [paper](https://www.computer.org/csdl/proceedings-article/sp/2023/933600b005/1NrbYpaG652).
 ```bibtex
 @INPROCEEDINGS {multitab-wf-datasets,
 author = {X. Deng and Q. Yin and Z. Liu and X. Zhao and Q. Li and M. Xu and K. Xu and J. Wu},
@@ -18,6 +18,8 @@ title = {Robust Multi-tab Website Fingerprinting Attacks in the Wild},
 year = {2023},
 }
 ```
+
+[News] We release a website fingerprint attack library ([link](https://github.com/Xinhao-Deng/Website-Fingerprinting-Library)) that includes implementations of 11 advanced DL-based WF attacks.
 
 
 ## Prerequisites
