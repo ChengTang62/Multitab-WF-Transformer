@@ -19,7 +19,7 @@ year = {2023},
 }
 ```
 
-[News] We release a website fingerprint attack library ([link](https://github.com/Xinhao-Deng/Website-Fingerprinting-Library)) that includes implementations of 11 advanced DL-based WF attacks.
+**[News]** We release a website fingerprint attack library ([link](https://github.com/Xinhao-Deng/Website-Fingerprinting-Library)) that includes implementations of 11 advanced DL-based WF attacks.
 
 
 ## Prerequisites
@@ -47,7 +47,7 @@ time_array = data["time"] # Sequence of packet timestamps
 label = data["label"]  # labels
 ```
 
-Note that we improved the quality of the datasets **after publication**. Specifically, we preserved screenshots of the websites after loading by using xvfbwrapper during traffic collection. We built an image classification model based on ResNet, capable of filtering out the website traffic that failed to load using the screenshots.
+Note that we have recently improved the quality of our dataset. Specifically, during traffic collection, we used xvfbwrapper to retain screenshots of the websites after loading. We built a new image classification model based on ResNet, which effectively filters out failed website traffic using screenshots. We will report the latest experimental results in the extended journal version (under review).
 
 ## Usage
 
