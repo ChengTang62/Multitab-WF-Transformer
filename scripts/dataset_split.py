@@ -8,8 +8,8 @@ def create_feature_matrix(direction, time, size):
     return direction * time + size
 
 parser = argparse.ArgumentParser(description='Split datasets')
-parser.add_argument("-i", '--infile', default="closed_2tab.npz", type=str, help='path of dataset')
-parser.add_argument("-o", '--outpath', default="processed/closed_2tab", type=str, help='path of dataset')
+parser.add_argument("-i", '--infile', required=True, type=str, help='path of dataset')
+parser.add_argument("-o", '--outpath', required=True, type=str, help='path of dataset')
 args = parser.parse_args()
 
 seed = 1018

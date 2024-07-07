@@ -50,8 +50,11 @@ feat_length = 10000
 
 args = parser.parse_args()
 os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
-in_path = os.path.join("datasets", "processed", args.dataset)
+in_path = os.path.join(args.dataset)
 writer = SummaryWriter(f"runs/{args.log}_{args.dataset}")
+model_save_dir = "models/ARES"
+if not os.path.exists(model_save_dir):
+    os.makedirs(model_save_dir)
 
 os.makedirs(f"models/ARES", exist_ok=True)
 
@@ -68,7 +71,7 @@ train_X, train_y = process_data(train_data, feat_length, is_direction=True)
 valid_X, valid_y = process_data(valid_data, feat_length, is_direction=True)
 
 
-num_classes = train_y.shape[1]
+num_classes =  train_y.shape[1]
 print(f"train: X={train_X.shape}, y={train_y.shape}")
 print(f"valid: X={valid_X.shape}, y={valid_y.shape}")
 print(f"num_classes: {num_classes}")
@@ -111,7 +114,7 @@ for epoch in range(301):
             y_pred_score = np.append(y_pred_score, outs.cpu().numpy(), axis=0)
     y_true = valid_y.numpy()
     
-    max_tab = 5
+    max_tab = 1
     tp = {}
     for tab in range(1, max_tab+1):
         tp[tab] = 0
@@ -133,4 +136,4 @@ for epoch in range(301):
     scheduler.step()
 
     if epoch > 0 and epoch % 50 == 0:
-        torch.save(model.state_dict(), os.path.join("models/ARES", f"{args.log}_{args.dataset}_epoch{epoch}.pth"))
+        torch.save(model.state_dict(), os.path.join(model_save_dir, f"{args.log}_epoch{epoch}.pth"))
