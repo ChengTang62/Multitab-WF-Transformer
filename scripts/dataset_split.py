@@ -3,10 +3,6 @@ import os
 import argparse
 from sklearn.model_selection import train_test_split
 
-def create_feature_matrix(direction, time, size):
-    # Example combination of features; you can adjust this as needed
-    return direction * time + size
-
 parser = argparse.ArgumentParser(description='Split datasets')
 parser.add_argument("-i", '--infile', required=True, type=str, help='path of dataset')
 parser.add_argument("-o", '--outpath', required=True, type=str, help='path of dataset')
@@ -23,7 +19,7 @@ time = data["time"]
 size = data["size"]
 label = data["label"]
 
-X = create_feature_matrix(direction, time, size)
+X = np.column_stack((direction, time, size))
 y = label
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.9, random_state=seed)
