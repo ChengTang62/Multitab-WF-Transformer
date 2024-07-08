@@ -46,7 +46,7 @@ batch_size = 64
 learning_rate = 0.0014
 step_size = 30
 gamma = 0.74
-feat_length = 10000
+feat_length = 4321
 
 args = parser.parse_args()
 os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
