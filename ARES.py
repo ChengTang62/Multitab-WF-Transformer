@@ -108,7 +108,7 @@ class LocalProfiling(nn.Module):
         super(LocalProfiling, self).__init__()
         
         self.net = nn.Sequential(
-            ConvBlock1d(in_channels=1, out_channels=32, kernel_size=7),
+            ConvBlock1d(in_channels=3, out_channels=32, kernel_size=7),
             nn.MaxPool1d(kernel_size=8, stride=4),
             nn.Dropout(p=0.1),
             ConvBlock1d(in_channels=32, out_channels=64, kernel_size=7),

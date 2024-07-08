@@ -19,7 +19,7 @@ time = data["time"]
 size = data["size"]
 label = data["label"]
 
-X = np.column_stack((direction, time, size))
+X = np.stack((direction, time, size), axis=-1)
 y = label
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.9, random_state=seed)
